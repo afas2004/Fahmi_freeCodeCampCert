@@ -1,0 +1,219 @@
+
+*{
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #F564A9;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+  height: auto;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.navbar-text{
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+#welcome-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #533B4D;
+}
+
+.welcome-message{
+  font-size: 3rem;
+  color: white;
+}
+
+.role{
+  font-size: 1.5rem;
+  margin-top:0;
+  color: grey;
+  font-style: italic;
+}
+
+#projects{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FAA4BD;
+}
+
+.head-text{
+  font-size: 3rem;
+  color: rgb(76, 11, 11);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 20px;
+}
+
+.project-tile{
+  width: 500px;
+  text-align: center;
+  background-color: white;
+  margin: 20px;
+}
+
+.project-link{
+  height: 100%;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.inner-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.inner-container div p{
+  color: black;
+  font-size: 1.5rem;
+}
+
+.profile-text{
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.profile-subtext{
+  color: grey;
+  font-size: 1.7rem;
+}
+
+#profiles{
+  display: flex;
+  flex-direction: column;
+  background-color: #533B4D;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact, i{
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.contact{
+  margin-left: 0;
+  padding-right: 20px;
+}
+
+i,.contact:hover{
+  cursor: pointer;
+}
+
+hr{
+  background-color: pink;
+  margin:0;
+  padding-top:5px;
+}
+
+footer div{
+  background-color: #533B4D;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.note, .copyright{
+  display: inline;
+  color: white;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+@media (max-width:400px) {
+#navbar{
+  display: flex;
+  justify-content: centre;
+}
+
+.welcome-message{
+  font-size: 2.5rem;
+  color: white;
+}
+
+.role{
+  font-size: 1rem;
+}
+
+.head-text{
+  font-size: 2rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.head-text{
+  font-size: 1.5rem;
+}
+
+.project-tile{
+  width: 350px;
+}
+
+span{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-text{
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.contact, i{
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+
+footer div{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.note, .copyright{
+  font-size: 1rem;
+}
+
+}
+
